@@ -36,11 +36,13 @@ a{
 }
 .h_eader > nav{
   width: 1200px;
+  height: 280px;
   margin: 0 auto;
   /* background: #FAC6AE; */
   display: flex;
   padding: 10px 0px 0px 0px;
   position: relative;
+  z-index: 4;
 } 
 .h_eader > nav >h1{
   padding-top: 25px;
@@ -52,7 +54,7 @@ a{
 /*마우스 오버 내비게이션*/
 .gnb:hover + .h_bottom{
   height: 200px;
-  z-index: 10;
+  z-index: 3;
 }
 
 /*루이보스 Q&A 소식 제품있는 ul태그*/
