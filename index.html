@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>위아루이 프로젝트</title>
+  <!--파비콘 이미지-->
+  <link rel="shortcut icon" type="image/x-icon" href="./images/____QQn_icon.ico">
+  <!--아이콘 이미지-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!--초기화 서식-->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!--공통서식-->
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <!--메인서식-->
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <!--스와이프 슬라이드 서식-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+<style>
+  .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+</style>
+</head>
+<body>
+  <!--헤더 영역 시작-->
+  <header>
+    <div class="h_eader">
+    <nav class="gnb">
+        <h1>
+          <a href="#" title="">
+            <img src="./images/h1_header.png" alt="헤더 로고">
+          </a>
+        </h1>
+
+        <ul class="n_ul01">
+          <li >
+            <a href="#" title="루이보스">루이보스</a>
+          </li>
+          <li><a href="#" title="Q&A">Q&A</a></li>
+          <li><a href="#" title="FQAS">FQAS</a></li>
+          <li>
+            <a href="#" title="소식">소식</a>
+          </li>
+          <li>
+            <a href="#" title="제품">제품</a>
+          </li>
+        </ul>
+
+        <ul class="n_ul02">
+        <li>
+          <a href="#" title="로그인">
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </li>
+        <!--검색창-->
+        <fieldset id="search_box">
+          <input type="search" id="search">
+          <label for="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
+        </fieldset>
+      </ul>  
+    </nav>
+
+    <div class="h_bottom">
+      <div class="h_bot">
+        <nav>
+          <ul >
+            <li>
+              <a href="#" title="루이보스란?">루이보스란?</a>
+            </li>
+            <li>
+              <a href="#" title="효능">효능</a>
+            </li>
+          </ul>
+  
+          <ul></ul>
+          <ul></ul>
+          <ul class="hidden2">
+            <li>
+              <a href="#" title="프로모션">프로모션</a>
+            </li>
+            <li>
+              <a href="#" title="인스타">인스타</a>
+            </li>
+          </ul>
+  
+          <ul class="hidden3">
+            <li><a href="#" title="오리지널">오리지널</a></li>
+            <li><a href="#" title="블렌딩">블렌딩</a></li>
+            <li><a href="#" title="콤부차">콤부차</a></li>
+            <li><a href="#" title="티웨어">티웨어</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+  <!--main-->
+  <main>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/wearerooi_main.jpg" alt="슬라이드1">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/wearerooi_main2.jpg" alt="슬라이드2">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/wearerooi_main3.jpg" alt="슬라이드3">
+        </div>
+      </div>
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div> -->
+    </div>
+
+
+    <!--컨텐츠 1 / 버튼으로 넘어가는 슬라이드-->
+    <section class="slide02" id="result">
+      <h2 class="hide">컨텐츠 1</h2>
+      <article>
+        <div class="b_cont">
+          <input type="radio" name="a" id="btn01" checked>
+          <input type="radio" name="a" id="btn02">
+          <input type="radio" name="a" id="btn03">
+          <input type="radio" name="a" id="btn04">
+        
+          <div class="t_cont">
+            <ul>
+              <li>
+                <img src="./images/slide1.jpg" alt="위아루이">
+                  <h3>WE ARE ROOI</h3>
+                  <p>일상의 속도를 잠시 늦추고 <br> 자연과 조화되는 시간을 즐기는, <br>
+                  당신을 위한 우리보스 브랜드 위아루이 입니다.
+                  </p>
+              </li>
+  
+              <li>
+                <img src="./images/slide2.jpg" alt="루이보스">
+                  <h3>ROOIBOS</h3>
+                  <p>
+                  자연 친화적인 루이보스.
+                  전 세계 6대 꽃의 왕국에서 18개월의 긴 시간 동안 천천히 자랍니다. 여름과 초가을
+                  사이에 수확된 싱그러운 루이보스는 아프리카의 뜨거운 태양 아래 물과 바람을 받아  
+                  들이며 발효됩니다. 이 때 루이보스는 38도의 온도로 14시간동안 땀을 흘리는데요
+                  이 과정에서 루이보스만의 깊은 호박색과 독특한 향미를 갖게 됩니다.
+                  </p>
+              </li>
+  
+              <li>
+                <img src="./images/slide3.jpg" alt="a cup of tea">
+                  <h3>A CUP OF TEA</h3>
+                  <p>차 한 잔 이상의 가치, <br>
+                    위아루이는 이미 우리 앞에 와 있는 소중한 것들을 경험하고 감상하기 위한 여유로운 마음가짐을 제안합니다.
+                  </p>
+              </li>
+  
+              <li>
+                <img src="./images/slide4.jpg" alt="WE THINK">
+                  <h3>WE THINK</h3>
+                  <p>우리는 이 맑은 루이보스가 보다 많은 이들의 라이프스타일과 맞닿을 수 있는 방법을 생각합니다. 또 다른 자연을 품은 임산부, 주말에 만났던 자연을 회상하는 직장인, 단 한 번의 이륙을 위해 모험을 연속하는 서퍼, 자연과 사람을 공간으로 이어주는 목수 등   자연을 닮은 이들이 루이보스를 만나는데 한계가 없는 접점을 찾아갑니다. <br>
+                    당신과 당신이 사랑하는 이들의 건강한 일상을 기원하며,
+                  </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="b_cont">
+          <label for="btn01" class="btn btn01" onclick="colorChange('#FAC6AE')">W</label>
+          <label for="btn02" class="btn btn02" onclick="colorChange('#C1D0CD')">R</label>
+          <label for="btn03" class="btn btn03" onclick="colorChange('#FAC6AE')">T</label>
+          <label for="btn04" class="btn btn04" onclick="colorChange('#C1D0CD')">T</label>
+        </div>
+      </article>
+    </section>
+
+    <!--함께하면 좋은 루이보스-->
+    <section class="cont_02">
+      <h2 class="hide">컨텐츠 1</h2>
+      <article class="up_cont" >
+        <h3>함께해요 루이보스!</h3>
+        <p>루이보스 원료 효능</p>
+
+
+        <article class="up_cont2">
+          <h2 class="hide">컨텐츠 1</h2>
+          <ul class="l_up"> 
+            <li class="orange">
+              <img src="./images/icon01.png" alt="루이보스">
+              <p>루이보스는 자연적으로 카페인이 없어요</p>
+            </li>
+            <li class="green">
+              <img src="./images/icon03.png" alt= "회복">
+              <p>강력한 항산화제, <br>
+                아스팔라틴의 유일한 공급원입니다<br>
+                운동 후 마시면 체력의 빠른 회복을 도와줘요</p>
+            </li>
+            <li class="orange">
+              <img src="./images/icon05.png" alt= "달">
+              <p>숙면을 위한 ‘굿나잇티로’도 좋아요</p>
+            </li>
+          </ul>
+
+          <ul class="r_up">
+            <li class="green">
+              <img src="./images/icon02.png" alt="물컵">
+              <p>체중감량을 위한 건강한 수분 섭취하세요</p>
+            </li>
+            <li class="orange">
+              <img src="./images/icon04.png" alt="흡수">
+              <p>탄닌 성분이 거의 없어서, <br>
+                철분 흡수를 방해하지 않아요</p>
+            </li>
+            <li class="green">
+              <img src="./images/icon06.png" alt="완화">
+              <p>비염, 천식, 건초열 등 <br>
+                계절성 알러지 완화 기능이있어요</p>
+            </li>
+          </ul>
+      </article>
+        <!--상세페이지로 이동more아이콘-->
+        <div class="more">
+          <p class="more_p01">
+            <a href="#" title="">
+              more
+            </a>
+            <i class="fa-solid fa-angle-right"></i>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!--제품-->
+    <section class="shop">
+      <h2 class="hide">컨텐츠 1</h2>
+      <div>
+        <article class="l_product">
+          <input type="radio" name="b" id="b_btn01">
+          <input type="radio" name="b" id="b_btn02">
+          <input type="radio" name="b" id="b_btn03">
+          <input type="radio" name="b" id="b_btn04">
+          <input type="radio" name="b" id="b_btn05">
+          <input type="radio" name="b" id="b_btn06">
+          <input type="radio" name="b" id="b_btn07">
+          <input type="radio" name="b" id="b_btn08">
+          <input type="radio" name="b" id="b_btn09">
+          <div class="explan"> 
+            <h3>제품</h3>
+            <!--여기 컨텐츠가 바뀌어야함-->
+            <ul class="explain">
+              <!--li태그 내용이사라지면서 담 li 태그가 나온다-->
+              <!--아프리카의봄-->
+              <li class="pro_cont01 ex_pro">
+                <h4>아프리카의 봄</h4>
+                <ul class="point_pro">
+                  <li>꽃향</li>
+                  <li>청량함</li>
+                  <li>바디감</li>
+                </ul>
+                <p>2019 코리아티챔피언십 대회금상(1위)수상작</p>
+                <p>
+                  봄 여름 가을 그리고 겨울 계절이 품은 고유한 향과 온도를 좋은 <br>
+                  루이보스와 계절별 산물로 표현한 무카페인 건강 블렌즈</p>
+                <p>
+                  봄을 연상시키는 다채로운 꽃향기<br>
+                  꽃향기에 이어지는 은은한 민트향<br>
+                  루이보스와 허니부쉬의 하모니
+                </p>
+              </li>
+  
+              <li class="pro_cont02 ex_pro">
+                <h4>그 여름 그 바다</h4>
+                <ul>
+                  <li>열대과일향</li>
+                  <li>청량함</li>
+                  <li>바디감</li>
+                </ul>
+                <p>자연 허브와 시원한 망고향의 조화를 느껴요!</p>
+                <p>
+                  봄 여름 가을 그리고 겨울 계절이 품은 고유한 향과 온도를 좋은 <br>
+                  루이보스와 계절별 산물로 표현한 무카페인 건강 블렌즈</p>
+                <p>
+                  트로피컬 감촉의 달콤함<br>
+                  그린 루이보스의 은은한 초컬릿향<br>
+                  싱그럽게 전해오는 여름의 청량감
+                </p>
+              </li>
+              <li class="pro_cont03 ex_pro">
+                <h4>모닝 스트로베리</h4>
+                <ul>
+                  <li>과일향</li>
+                  <li>단맛</li>
+                  <li>바디감</li>
+                </ul>
+                <p>섬세하고 풍부한 향미로 따뜻한 하루를 시작하세요</p>
+                <p>
+                  조화로운 블렌딩에 깃든 우아한 향미<br>
+                  가을의 색을 담은 깊고 청아한 수색
+                </p>
+                <p>
+                  아침을 깨우는 싱그러운 딸기와 사과<br>
+                  그리고 달콤한 캐러멜향의 조화<br>
+                </p>
+              </li>
+              <li class="pro_cont04 ex_pro">
+                <h4>겨울을 지나다</h4>
+                <ul>
+                  <li>고구마향</li>
+                  <li>구수함</li>
+                  <li>바디감</li>
+                </ul>
+                <p>카페인 없이 나를 사색하는 안온한 밤</p>
+                <p>
+                  봄 여름 가을 그리고 겨울 계절이 품은 고유한 향과 온도를 좋은 <br>
+                  루이보스와 계절별 산물로 표현한 무카페인 건강 블렌즈</p>
+                <p>
+                  루이보스의 감칭맛과 잘 어울리는고구마의 달콤하고 구수한 향미<br>
+                  벨벳처럼 부드럽게 이어지는잔잔한 캐러멜향의 따스함
+                </p>
+              </li>
+              <li class="pro_cont05 ex_pro">
+                <h4>바닐라 루이보스</h4>
+                <ul>
+                  <li>바닐라향</li>
+                  <li>단맛</li>
+                  <li>바디감</li>
+                </ul>
+                <p>안온한 밤을 위한 굿나잇티</p>
+                <p>
+                  안온한밤, 그리고 차 한 잔. 우리의 마음을 조금 더 따스하게 합니다</p>
+                <p>
+                  루이보스의 묵직한 바디감에 이어<br>
+                  오래도록 입 안에 머무는 바닐라의 향기<br>
+                  그 부드러운 잔향이 우리 곁에 머무릅니다.
+                </p>
+              </li>
+              <li class="pro_cont06 ex_pro">
+                <h4>피치 플럼</h4>
+                <ul>
+                  <li>과일향</li>
+                  <li>단맛</li>
+                  <li>바디감</li>
+                </ul>
+                <p>급랭한 피치플럼을 과일청이나 꿀과 함께 즐겨 보세요!</p>
+                <p>
+                  동글동글 싱싱하고 푸르른 에너지를 품은 피치플럼 <br>
+                  가을의 정취를 닮은 부드러운 과일향. <br>
+                  그 사이로 은은하게 피어오르는 장미꽃의 인사를 전합니다.</p>
+                <p>
+                  산뜻한 그린 루이보스에 내려앉은 천도복숭아와 자두의 다채로운 향미<br>
+                  복숭아의 차분한 달콤함에 이어지는 새콤달콤 자두의 은은한 여운
+                </p>
+              </li>
+              <li class="pro_cont07 ex_pro">
+                <h4>딸기 루이보스</h4>
+                <ul>
+                  <li>딸기향</li>
+                  <li>바디감</li>
+                </ul>
+                <p>루이보스 속에 은은하게 스며든 딸기</p>
+                <p>
+                  안온한 밤, 그리고 차 한 잔 <br>
+                  우리의 마음을 조금 더 따스하게 합니다</p>
+                <p>
+                  루이보스의 바디감에 잔잔하게 스며든 달기의 기분좋은 달콤함<br>
+                  밝은 붉은빛이 감도는 우아한 수색 그래고 입 안에 남는 포근한 여운<br>
+                </p>
+              </li>
+              <li class="pro_cont08 ex_pro">
+                <h4>우리의 가을</h4>
+                <ul>
+                  <li>시트러스향</li>
+                  <li>구수함</li>
+                  <li>바디감</li>
+                </ul>
+                <p>깊고 청아한 가을의 풍미</p>
+                <p>
+                  가을의 꽃 메리골드, 제철 단호박과 자연허브로 <br>
+                  여름 내 지친 우리 몸에 생기를 더해요!</p>
+                <p>
+                  가을하늘처럼 청량한 시트러스향<br>
+                  깊고 달콤한 다크 초콜릿향<br>
+                  삼나무 숲 산책의 정서
+                </p>
+              </li>
+              <li class="pro_cont09 ex_pro">
+                <h4>오로라 루이보스</h4>
+                <ul>
+                  <li>과일향</li>
+                  <li>청량함</li>
+                  <li>단맛</li>
+                </ul>
+                <p>오로라는 어떤 맛일까?</p>
+                <p>
+                  다양한 허브와 과일의 조화로 풍부한 향미를 느껴보세요
+                </p>
+                <p>
+                  파인애플의 달콤함에 이어 은은하게 느껴지는 레몬의 상큼함<br>
+                  그린 루이보스의 부드러운 수색과 트로피컬 감촉의 청량한 향미
+                </p>
+              </li>
+            </ul>
+        </div>
+  
+        <p class="more_p02">
+          <a href="#" title="">
+            more
+          </a>
+          <i class="fa-solid fa-angle-right"></i>
+        </p>
+        </article>
+  
+        <article class="r_product">
+          <h2 class="hide">컨텐츠 1</h2>
+          <ul class="l_pro">
+            <li>
+              <label for="b_btn01" class="btn2 b_btn01" >
+                <img src="./images/product01.jpg" alt="제품사진1" id="B_btn01">
+              </label>
+            </li>
+            <li>
+              <label for="b_btn03" class="btn2 b_btn03">
+                <img src="./images/product03.jpg" alt="제품사진3" id="B_btn03">
+              </label>
+            </li>
+            <li>
+              <label for="b_btn05" class="btn2 b_btn05">
+                <img src="./images/product05.jpg" alt="제품사진5" id="B_btn05">
+              </label>
+            </li>
+            <li>
+              <label for="b_btn07" class="btn2 b_btn07">
+                <img src="./images/product07.jpg" alt="제품사진7" id="B_btn07"> 
+              </label>
+            </li>
+            <li>
+              <label for="b_btn09" class="btn2 b_btn09">
+                <img src="./images/product09.jpg" alt="제품사진9" id="B_btn09">
+              </label>
+            </li>
+          </ul>
+  
+          <ul class="r_pro">
+            <li>
+              <label for="b_btn02" class="btn2 b_btn02">
+                <img src="./images/product02.jpg" alt="제품사진2" id="B_btn02">
+              </label>
+            </li>
+            <li>
+              <label for="b_btn04" class="btn2 b_btn04">
+                <img src="./images/product04.jpg" alt="제품사진4" id="B_btn04">
+              </label>
+            </li>
+            <li>
+              <label for="b_btn06" class="btn2 b_btn06">
+                <img src="./images/product06.jpg" alt="제품사진6 " id="B_btn06">
+              </label>
+            </li>
+            <li>
+              <label for="b_btn08" class="btn2 b_btn08">
+                <img src="./images/product08.jpg" alt="제품사진8" id="B_btn08">
+              </label>
+            </li>
+          </ul>
+  
+        </article>
+      </div>
+    </section>
+
+    <!--아프리카의 봄을 선물합니다-->
+    <section class="spring">
+      <h2 class="hide">컨텐츠 1</h2>
+      <article>
+        <h3>아프리카의 봄을 선물합니다</h3>
+        <p class="p01">세계에서 유일하게 루이보스를 재배할 수 있는 독특한 지역에 기반을 둔<br>
+          위아루이의 특별한 루이보스. 2021년 5월 ,루이보스는 지리적 표시 지위를 받은 <br>
+          최초의 아프리카 식품이 되어 원산지 보호 지정이 부여되었습니다</p>
+        <p class="p02">남아공 케이프 서부/북부에 위치한 16개 지역은 루이보스를 재배할 수 있는 세계 유일<br>
+          의 지역으로서 위아루이와 장기 계약을 통해 건강한 루이보스를 제공하는 유기농장은<br>
+          이 지역 전체에 퍼져 있습니다.</p>
+
+          <p class="more_p03">
+            <a href="#" title="">
+              more
+            </a>
+            <i class="fa-solid fa-angle-right"></i>
+          </p>
+      </article>
+    </section>
+
+    <!--소식-->
+    <section class="post">
+      <h2 class="hide">컨텐츠 1</h2>
+      <article>
+        <h3>소식</h3>
+        <!--그리드 배치 시작-->
+        <p>새로운 소식</p>
+        <div class="grid_gallery">
+          <figure>
+            <img src="./images/post_01.jpg" alt="소식1사진">
+            <figcaption>
+              <a href="#" title="">Peach Rooibos</a> 
+            </figcaption>
+          </figure>
+          
+          <figure>
+            <img src="./images/post_02.jpg" alt="소식2사진">
+            <figcaption>
+              <a href="#" title="">Spring Promotion</a> 
+            </figcaption>
+          </figure>
+          <!-- <figure>
+  
+            <img href="" alt="">
+            <fieldset>
+              <a href="#" title=""></a> 
+            </fieldset>
+          </figure>
+  
+          <figure>
+            <img href="" alt="">
+            <fieldset>
+              <a href="#" title=""></a> 
+            </fieldset>
+          </figure> -->
+  
+          <figure>
+            <img src="./images/post_03.jpg" alt="소식 5 사진">
+            <figcaption>
+              <a href="#" title="">Mojito Edition</a> 
+            </figcaption>
+          </figure>
+  
+          <figure>
+            <img src="./images/post_04.jpg" alt="소식6사진">
+            <figcaption>
+              <a href="#" title="">2019 코리아티챔피언십 수상</a> 
+            </figcaption>
+          </figure>
+  
+        </div>
+      </article>
+    </section>
+
+    <a href="#" id="Top">TOP</a>
+  </main>
+
+
+  <!--footer-->
+  <footer>
+    <div class="f_ooter">
+      <nav>
+        <div class="f_top">
+          <h2>
+            <a href="#" title="">
+              <img src="./images/h2_footer.png" alt="푸터 로고">
+            </a>
+          </h2>
+
+          <ul>
+            <li>
+              <a href="#" title="">
+                <i class="fa-solid fa-envelope-open"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </li>
+          </ul>
+      </div>
+
+        <address>
+          <p>Company. 위아루이(we are rooi)
+            &#65372; Address. 부산광역시 지장대로 82-6 2층
+            &#65372;Owner. 최선영
+            &#65372; Business License. 2022 0000 0000 0000000
+            &#65372; Mail Order License. 제0000000000 00000000
+            &#65372; Personal Information Manager. 이진
+            &#65372;Email.00000@0000.000
+            &#65372; Phon Number. 000-0000-0000
+            <!-- Copyright  Chic line, All Rights Reserved. -->
+          </p>
+          <p>
+            Address: 2F 82-6, Gijang-daero, Busan, South Korea &#65372; Business Registration Number
+          </p>
+        </address>
+    </nav>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+<script>
+
+    //컨텐츠2 wrtt 색상변경을 위한 함수
+    function colorChange(color){
+      // console.log(color);// 색상 글자 나와야함
+      document.getElementById('result').style.backgroundColor=color;
+    };
+
+
+
+</script>
+
+<!--마우스 오버시 사진 바뀌는 애니메이션-->
+<script>
+
+  const B_btn01 = document.getElementById('B_btn01')
+  B_btn01.addEventListener('mouseover',function(){
+    this.src='./images/product_01.jpg';
+  })
+  B_btn01.addEventListener('mouseout',function(){
+    this.src='./images/product01.jpg';
+  })
+  //이걸 쓸려면 마우스 오버를 포기해야함
+  // B_btn01.addEventListener('click',function(){
+  //   console.log("click")
+  //   this.src='./images/product_01.jpg'
+  // })
+
+  const B_btn02 = document.getElementById('B_btn02')
+  B_btn02.addEventListener('mouseover',function(){
+    this.src='./images/product_02.jpg';
+  })
+  B_btn02.addEventListener('mouseout',function(){
+    this.src='./images/product02.jpg';
+  })
+
+  const B_btn03 = document.getElementById('B_btn03')
+  B_btn03.addEventListener('mouseover',function(){
+    this.src='./images/product_03.jpg';
+  })
+  B_btn03.addEventListener('mouseout',function(){
+    this.src='./images/product03.jpg';
+  })
+
+  const B_btn04 = document.getElementById('B_btn04')
+  B_btn04.addEventListener('mouseover',function(){
+    this.src='./images/product_04.jpg';
+  })
+  B_btn04.addEventListener('mouseout',function(){
+    this.src='./images/product04.jpg';
+  })
+
+  const B_btn05 = document.getElementById('B_btn05')
+  B_btn05.addEventListener('mouseover',function(){
+    this.src='./images/product_05.jpg';
+  })
+  B_btn05.addEventListener('mouseout',function(){
+    this.src='./images/product05.jpg';
+  })
+
+  const B_btn06 = document.getElementById('B_btn06')
+  B_btn06.addEventListener('mouseover',function(){
+    this.src='./images/product_06.jpg';
+  })
+  B_btn06.addEventListener('mouseout',function(){
+    this.src='./images/product06.jpg';
+  })
+
+  const B_btn07 = document.getElementById('B_btn07')
+  B_btn07.addEventListener('mouseover',function(){
+    this.src='./images/product_07.jpg';
+  })
+  B_btn07.addEventListener('mouseout',function(){
+    this.src='./images/product07.jpg';
+  })
+
+  const B_btn08 = document.getElementById('B_btn08')
+  B_btn08.addEventListener('mouseover',function(){
+    this.src='./images/product_08.jpg';
+  })
+  B_btn08.addEventListener('mouseout',function(){
+    this.src='./images/product08.jpg';
+  })
+
+  const B_btn09= document.getElementById('B_btn09')
+  B_btn09.addEventListener('mouseover',function(){
+    this.src='./images/product_09.jpg';
+  })
+  B_btn09.addEventListener('mouseout',function(){
+    this.src='./images/product09.jpg';
+  })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>위아루이 모바일</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <!--공통서식-->
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+    <!--메인서식-->
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+
+      <!--스와이프 슬라이드 서식-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <style>
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper {
+        margin-left: auto;
+        margin-right: auto;
+      }
+  </style>
+
+
+</head>
+<body>
+  <header>
+    <input type="checkbox" id="bas_bar">
+    <section class="h_eader">
+      <article>
+        <h1><a href="#" title=""><img src="./images/WE ARE ROOI.png" alt="위아루이 로고"></a></h1>
+        <label for="bas_bar" class="">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label for="bas_bar" class="">
+            <!-- <ul>
+            <i class="fa-solid fa-x"></i>
+          </label>
+          <li><a href="#" title="">루이보스 </a></li>
+          <li><a href="#" title="">소식 </a></li>
+          <li><a href="#" title="">Q&A </a></li>
+          <li><a href="#" title="">FAQS </a></li>
+          <li><a href="#" title="">제품 </a></li>
+        </ul> -->
+        <i class="fa-solid fa-user"></i>
+      </article>
+    </section>
+  </header>
+  <main>
+    <!--메인 슬라이드-->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../images/wearerooi_main.jpg" alt="슬라이드1">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/wearerooi_main2.jpg" alt="슬라이드2">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/wearerooi_main3.jpg" alt="슬라이드3">
+        </div>
+      </div>
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div> -->
+    </div>
+    <!--컨텐츠2브랜드 소개-->
+    <section class="slide02" id="result">
+      <article>
+        <div class="b_cont">
+          <input type="radio" name="a" id="btn01" checked>
+          <input type="radio" name="a" id="btn02">
+          <input type="radio" name="a" id="btn03">
+          <input type="radio" name="a" id="btn04">
+        
+          <div class="t_cont">
+            <ul>
+              <li class="cont_img1">
+                  <h3>WE ARE ROOI</h3>
+                  <p>일상의 속도를 잠시 늦추고 <br> 자연과 조화되는 시간을 즐기는, <br>
+                  당신을 위한 우리보스 브랜드 위아루이 입니다.
+                  </p>
+              </li>
+  
+              <li class="cont_img2">
+                  <h3>ROOIBOS</h3>
+                  <p>
+                  자연 친화적인 루이보스.
+                  전 세계 6대 꽃의 왕국에서 18개월의 긴 시간 동안 천천히 자랍니다. 
+                  여름과 초가을
+                  사이에 수확된 싱그러운 루이보스는 
+                  아프리카의 뜨거운 태양 아래 물과 바람을 받아  
+                  들이며 발효됩니다.
+                  </p>
+              </li>
+  
+              <li class="cont_img3">
+                  <h3>A CUP OF TEA</h3>
+                  <p>차 한 잔 이상의 가치, <br>
+                    위아루이는 이미 우리 앞에 와 있는 소중한 것들을 경험하고 감상하기 위한 여유로운 마음가짐을 제안합니다.
+                  </p>
+              </li>
+  
+              <li class="cont_img4">
+                  <h3>WE THINK</h3>
+                  <p>우리는 이 맑은 루이보스가 보다 많은 이들의 
+                    <br>라이프스타일과 
+                    맞닿을 수 있는 방법을 생각합니다. 
+                    <!-- 또 다른 자연을 품은 임산부, 주말에 만났던 자연을 회상하는 직장인, 
+                    단 한 번의 이륙을 위해 모험을 연속하는 서퍼, 
+                    자연과 사람을 공간으로 이어주는 목수 등   
+                    자연을 닮은 이들이 루이보스를 만나는데
+                    한계가 없는 접점을 찾아갑니다. <br> -->
+                    <br>당신과 당신이 사랑하는 이들의 건강한 일상을 기원하며,
+                  </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="b_cont" id="b_cont">
+          <label for="btn01" class="btn btn01" >W</label>
+          <label for="btn02" class="btn btn02" >R</label>
+          <label for="btn03" class="btn btn03" >T</label>
+          <label for="btn04" class="btn btn04" >T</label>
+        </div>
+      </article>
+    </section>
+
+    <!--함께해요 루이보스-->
+    <section class="cont_02">
+      <article>
+        <h3>함께해요 루이보스!</h3>
+        <ul>
+          <li>
+            <img src="./images/icon1.png" alt="노카페인" class="l_icon">
+            <img src="./images/icon2.png" alt="수분" class="r_icon">
+            <p>루이보스는 자연적으로 카페인이 없어요<br>
+            체중감량을 위한 건강한 수분 섭취하세요
+            </p>
+          </li>
+          <li>
+            <img src="./images/icon3.png" alt="회복" class="l_icon">
+            <img src="./images/icon4.png" alt="흡수" class="r_icon">
+            <p>강력한 항산화제, 아스팔라틴의 유일한 공급원입니다<br>
+              운동 후 마시면 체력의 빠른 회복을 도와줘요
+            </p>
+          </li>
+          <li>
+            <img src="./images/icon5.png" alt="완화" class="l_icon">
+            <img src="./images/icon6.png" alt="수면" class="r_icon">
+            <p>탄닌 성분이 거의 없어서, 철분 흡수를 방해하지 않아요<br>
+              비염, 천식, 건초열 등 계절성 알러지 완화 기능이있어요<br>
+              숙면을 위한 ‘굿나잇티로’도 좋아요
+            </p>
+          </li>
+        </ul>
+      </article>
+    </section>
+    <!--제품-->
+    <section>
+      <article class="l_product">
+        <ul>
+          <h3></h3>
+          <!--여기서부터 바뀌는거-->
+          <li>
+            <p>아프리카의 봄</p>
+            <ul>
+              <li>꽃향</li>
+              <li>청량함</li>
+              <li>바디감</li>
+            </ul>
+            <p>2019코리아티 챔피언십 대회 금상 (1위)수상작</p>
+            <p>봄을 연상시키는 다채로운 곷향기<br>
+              꽃향기에 이어지는 은은한 민트향<br>
+              루이보스와 허니부쉬의 하모니
+            </p>
+          </li>
+        </ul>
+      </article>
+      <article class="r_product">
+        <ul>
+          <li>
+            <!-- <img src="" title=""> -->
+          </li>
+        </ul>
+      </article>
+    </section>
+    <!--아프리카의 봄을 선물합니다-->
+    <section class="spring">
+      <h3>아프리카의 봄을 선물합니다</h3>
+      <article>
+      <p class="p01">세계에서 유일하게 루이보스를 재배할 수 있는 독특한 지역에 기반을 둔
+        위아루이의 특별한 루이보스. 2021년 5월 ,루이보스는 지리적 표시 지위를 받은
+        최초의 아프리카 식품이 되어 원산지 보호 지정이 부여되었습니다</p>
+      <p class="p02">
+        남아공 케이프 서부/북부에 위치한 16개 지역은 루이보스를 재배할 수 있는 세계 유일
+        의 지역으로서 위아루이와 장기 계약을 통해 건강한 루이보스를 제공하는 유기농장은
+        이 지역 전체에 퍼져 있습니다.</p>
+      </article>
+    </section>
+    <!--소식-->
+    <section>
+    </section>
+  </main>
+  <footer>
+    <section class="f_ooter">
+      <article class="f_top">
+        <a href="#" title="위아루이 로고">
+          <img src="./images/wearerooi.png" alt="위아루이 로고">
+        </a>
+        <ul>
+          <li>
+            <a href="#" title="메일">
+              <i class="fa-solid fa-envelope-open"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" title="인스타">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" title="전화">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </li>
+        </ul>
+
+      </article>
+
+      <article class="f_bottom">
+        <address>
+          Company. 위아루이(we are rooi)
+          |Owner. 최선영
+          | Business License. 2022 0000 0000 0000000
+          | Mail Order License. 제0000000000 00000000
+          | Personal Information Manager. 이진
+          | Email.00000@0000.000
+          | Phon Number. 000-0000-0000
+          <!-- Copyright ⓒ We are rooi Spring in South Africa, All Rights Reserved. -->
+          | Address. 부산광역시 지장대로 82-6 2층
+        </address>
+      </article>
+
+    </section>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+  const B_btn01 = document.getElementById('result')
+
+// 이걸 쓸려면 마우스 오버를 포기해야함
+B_btn01.addEventListener('click',function(){
+console.log("click")
+this.src='../images/con2.jpg'
+})
+
+
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 0,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>

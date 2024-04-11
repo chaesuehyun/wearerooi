@@ -1,0 +1,187 @@
+@charset "utf-8";
+/*기본스타일 3가지 글자 모양 폰트 색상 링크*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+:root{
+  --color01: #333;
+  --color02: #F2692B;
+  --color03: #0A4C40;
+  --color04: #FAC6AE;
+  --color05: #C1D0CD;
+  --color06: #fff;
+  --color07: #141414;
+  --font_size_18:18px;
+  --font_size_16 :16px;
+  --font_size_14:14px;
+  --font_wieht_light:200;
+  --font_wieht_bold:600;
+}
+
+body{ 
+  font-family: "Noto Sans KR", sans-serif, Arial;
+  font-size: var(--font_size_16);
+  color: var(--color01);
+  line-height: 160%;
+}
+a{
+  color: var(--color01);
+  text-decoration: none;
+}
+
+/*헤더 서식*/
+.h_eader{
+  width: 100%;
+  height: 100px;
+  background: var(--color02);
+}
+.h_eader > nav{
+  width: 1200px;
+  margin: 0 auto;
+  /* background: #FAC6AE; */
+  display: flex;
+  padding: 10px 0px 0px 0px;
+  position: relative;
+} 
+.h_eader > nav >h1{
+  padding-top: 25px;
+  padding-right: 100px;
+}
+.h_eader > nav >ul{
+  display: flex;
+}
+/*마우스 오버 내비게이션*/
+.gnb:hover + .h_bottom{
+  height: 200px;
+  z-index: 10;
+}
+
+/*루이보스 Q&A 소식 제품있는 ul태그*/
+.n_ul01{
+  width: 700px;
+  height: 24px;
+  justify-content: space-evenly;
+  padding: 25px 0px 0px 0px;
+}
+
+/*마우스 오버 내비게이션 서식*/
+.h_bottom{
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  top: 100px; left: 0px;
+  background: rgba(0,0,0,.5);
+  overflow: hidden;
+  transition: 0.5s;
+}
+.h_bot{
+  width: 1200px;
+  margin: 0 auto;
+}
+.h_bottom nav{
+  width: 700px; 
+  margin: 0 auto;
+  display: flex;
+  padding-left: 230px;
+}
+.h_bottom nav > ul{
+  width: 100px;
+}
+.h_bottom nav > ul >li{
+  padding-top: 20px;
+
+}
+.h_bottom nav > ul >li a{
+  color: var(--color06);
+  font-size: var(--font_size_14);
+}
+.hidden2{
+  padding-left: 90px;
+}
+.hidden3{
+  padding-left: 10px;
+}
+
+.n_ul01 > li{}
+.n_ul01 > li >a {
+  font-size: var(--font_size_16);
+  color: var(--color06);
+}
+.n_ul01 > li >a:hover{text-decoration: underline;}
+
+/*로그인 이랑 검색창 ul태그*/
+.n_ul02{
+  position: absolute;
+  right: 0px;
+  padding: 25px 10px 10px 10px;
+  display: flex;
+}
+.n_ul02 i{
+  font-size: var(--font_size_24);
+  color: var(--color06);
+}
+.n_ul02 > li{}
+.n_ul02 > li > a{}
+
+/*검색창 fieldset 태그*/
+#search_box{
+  position: relative;
+  padding-left: 20px;
+}
+#search{
+  /* display: none; */
+  width: 24px;
+  height: 30px;
+  border: none;
+  /* position: relative; */
+  background: var(--color02);
+}
+#search:focus{
+  width: 150px;
+  transition:.3s;
+  border-bottom: 1px solid var(--color06);
+}
+.fa-magnifying-glass{
+  position: absolute;
+  right: 3px; top: 5px;
+}
+
+
+
+/*푸터 서식*/
+.f_ooter{
+  width: 100%; height: 185px;
+  background: var(--color07);
+}
+.f_ooter > nav{
+  width: 1200px; margin: 0 auto;
+  position: relative;
+}
+.f_top{
+  display: flex; 
+  /* background: var(--color01); */
+  padding-top: 10px;
+}
+.f_top h2{padding-top: 25px;}
+
+
+
+.f_ooter ul{
+  display: flex;
+  position: absolute;
+  right: 0px;
+}
+
+.f_ooter i{
+  color: var(--color02);
+  font-size: var(--font_size_18);
+  padding: 30px 10px 10px 10px;
+}
+
+.f_ooter address{
+  padding-top: 10px;
+}
+.f_ooter address >p{
+  font-size: 13px;
+  color: var(--color06);
+  font-style: normal;
+}

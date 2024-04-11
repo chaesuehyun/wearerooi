@@ -1,0 +1,229 @@
+@charset "utf-8";
+:root{
+  --color01: #333;
+  --color02: #F2692B;
+  --color03: #0A4C40;
+  --color04: #FAC6AE;
+  --color05: #C1D0CD;
+  --color06: #fff;
+  --color07: #141414;
+  --font_size_24:24px;
+  --font_size_20:20px;
+  --font_size_18:18px;
+  --font_size_16 :16px;
+  --font_size_14:14px;
+  --font_size_13:13px;
+  --font_wieht_light:200;
+  --font_wieht_bold:600;
+}
+
+/*컨텐츠 2 */
+.cont_img1{
+  width: 100%;
+  height: 100%;
+  /* background-image: url(../images/con3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+}
+.cont_img2{
+  width: 430px;
+  height: 389px;
+  /* background-image: url(../images/con1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+}
+.cont_img3{
+  width: 430px;
+  height: 389px;
+  /* background-image: url(../images/con2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+}
+.cont_img4{
+  width: 430px;
+  height: 389px;
+  /* background-image: url(../images/con4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+}
+.slide02{
+  width:100%;
+  height: 389px;
+  background: var(--color04);
+  /* margin: 0; */
+  background-image: url(../images/con1.jpg);
+  background-image: url(../images/con1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.slide02 article{
+  width: 100%;
+  /* margin: 0 auto; */
+  background: cornflowerblue;
+  position: relative;
+}
+.t_cont ul{
+  display: flex;
+  position: relative;
+  transition: 0.3s;
+}
+.t_cont li{
+  /*넓이를 지정해서 */
+  width: 4100%;
+  height: 389px;
+  /* background: coral; */
+  text-align: center;
+  margin-right: 160px;
+  color: var(--color06);
+  padding-left: 30px;
+}
+/* .t_cont li:last-child{padding-right: 160px;} */
+
+.t_cont h3{
+  width: 430px;
+  font-size: var(--font_size_20);
+}
+.t_cont{
+  font-size: var(--font_size_18);
+  overflow: hidden;
+}
+.t_cont h3{
+  padding-top: 100px;
+  font-size: var(--font_size_24);
+}
+
+.t_cont p{
+  padding-top: 50px;
+  font-size: var(--font_size_16);
+  line-height: 25px;
+}
+.t_cont img{
+  border-radius: 10px;
+  width: 440px;height: 380px;
+}
+
+
+/*버튼 스타일*/
+
+.b_cont{
+  /* width: 800px; */
+  /* height: 50px; */
+  text-align: center;
+  margin-top: 0px;
+  position: absolute;
+}
+#b_cont{
+  top: 300px;left: 90px;
+}
+.b_cont >label:hover{
+  background: var(--color03);
+  color: var(--color06);
+  border: 3px solid var(--color03);
+}
+.b_cont input{
+  display: none;
+}
+.btn{
+  width: 50px;
+  height: 50px;
+  /* text-align: center; */
+  border-radius: 10px 0px 10px 0px;
+  border: 3px solid var(--color02);
+  padding: 10px 20px;
+  line-height: 50px;
+  color: var(--color02);
+  font-weight: bold;
+}
+
+#btn01:checked ~ .t_cont > ul{left: 0px;}
+#btn02:checked ~ .t_cont > ul{left: -620px;}
+#btn03:checked ~ .t_cont > ul{left: -1230px;}
+#btn04:checked ~ .t_cont > ul{left: -1850px;}
+
+/*함께해요 루이보스*/
+.cont_02{
+  width: 100%;
+  height: 385px;
+}
+.cont_02 article{
+  width: 450px;
+  margin: 0 auto;
+}
+.cont_02 >article>h3{
+  font-size: var(--font_size_24);
+  text-align: center;
+  padding: 30px 0px 20px 0px ;
+}
+.cont_02 >article>p{
+  /* font-size: var(--font_size_14); */
+  /* position: absolute; */
+  /* left: 5px; top:20px; */
+}
+.cont_02 article li{
+  height: 85px;
+  border: 3px solid var(--color02);
+  border-radius: 10px 0px 10px 0px ;
+  margin: 10px 0px ;
+  position: relative;
+}
+.cont_02 article li:nth-child(2){
+  height: 85px;
+  border: 3px solid var(--color03);
+  border-radius: 10px 0px 10px 0px ;
+  margin: 10px 0px ;
+  position: relative;
+}
+.cont_02 >article p{
+  font-size: var(--font_size_14);
+  position: absolute;
+  left: 60px;
+  top: 25px;
+  text-align: center;
+}
+.cont_02 article li:first-child >p{
+  left: 90px;
+}
+.cont_02 article li:last-child >p{
+
+  left: 50px;
+}
+
+.l_icon{
+  float: left;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+.r_icon{
+  float: right;
+  padding-top: 30px;
+  padding-right: 10px;
+}
+
+/*아프리카의 봄을 선물합니다*/
+.spring{
+  width: 100%;
+  height: 235px;
+  background-image: url(../images/spring.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color06);
+}
+.spring h3{
+  text-align: center;
+  font-size: var(--font_size_24);
+  padding: 20px 0px;
+}
+.spring article{
+  width: 345px;
+  margin: 0 auto;
+}
+.spring p{
+  font-size: var(--font_size_14);
+  padding-top: 20px;
+  line-height: 5px20px;
+}
