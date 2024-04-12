@@ -1,0 +1,518 @@
+@charset "utf-8";
+:root{
+  --color01: #333;
+  --color02: #F2692B;
+  --color03: #0A4C40;
+  --color04: #FAC6AE;
+  --color05: #C1D0CD;
+  --color06: #fff;
+  --color07: #141414;
+  --font_size_20:20px;
+  --font_size_18:18px;
+  --font_size_16 :16px;
+  --font_size_14:14px;
+  --font_size_13:13px;
+  --font_wieht_light:200;
+  --font_wieht_bold:600;
+}
+.hide{display: none;}
+/*탑버튼*/
+
+
+/*헤더 아래 이미지*/
+.slide01{
+  height: 815px;
+}
+.slide02{
+  width: 100%;
+  height: 950px;
+  background: var(--color04);
+}
+.slide02 article{
+  width: 760px;
+  margin: 0 auto;
+  /* background: cornflowerblue; */
+  padding-top: 100px;
+}
+.t_cont ul{
+  display: flex;
+  position: relative;
+  transition: 0.3s;
+}
+.t_cont li{
+  /*넓이를 지정해서 */
+  width: 1000px;
+  height: 650px;
+  /* background: coral; */
+  text-align: center;
+  padding-left: 160px;
+}
+.t_cont li:last-child{padding-right: 160px;}
+
+.t_cont h3{
+  font-size: var(--font_size_20);
+}
+.t_cont{
+  font-size: var(--font_size_18);
+  overflow: hidden;
+}
+.t_cont h3{
+  padding-top: 50px;
+  font-size: var(--font_size_18);
+}
+
+.t_cont p{
+  padding-top: 30px;
+  font-size: var(--font_size_16);
+}
+.t_cont img{
+  border-radius: 10px;
+  width: 440px;height: 380px;
+}
+
+
+/*버튼 스타일*/
+
+.b_cont{
+  /* width: 800px; */
+  /* height: 50px; */
+  text-align: center;
+  margin-top: 30px;
+}
+.b_cont >label:hover{
+  background: var(--color03);
+  color: var(--color06);
+  border: 3px solid var(--color03);
+}
+.b_cont input{
+  display: none;
+}
+.btn{
+  width: 50px;
+  height: 50px;
+  /* text-align: center; */
+  border-radius: 10px 0px 10px 0px;
+  border: 3px solid var(--color02);
+  padding: 10px 20px;
+  line-height: 50px;
+  color: var(--color02);
+  font-weight: bold;
+}
+
+    #btn01:checked ~ .t_cont > ul{left: 0px;}
+    #btn02:checked ~ .t_cont > ul{left: -600px;}
+    #btn03:checked ~ .t_cont > ul{left: -1200px;}
+    #btn04:checked ~ .t_cont > ul{left: -1800px;}
+
+    /*체크가 있는 버튼일떄 sectio의 배경색상 바뀌게 하기*/
+    .slide02 ~ #btn01:checked {background-color: var(--color04);}
+
+
+
+/*2번째 컨텐츠 함께해요 루이보스*/
+.cont_02{
+  width: 100%;
+  height: 750px;
+}
+.up_cont{
+  width: 1200px ;
+  margin: 0 auto;
+}
+.up_cont h3, .up_cont p{
+  text-align: center;
+}
+.up_cont h3{
+  font-size: var(--font_size_20);
+  margin: 60px 0px 10px 0px;
+}
+.up_cont p{
+  font-size: var(--font_size_18);
+  margin-bottom: 30px;
+}
+/*ul 태그 정렬*/
+.up_cont2{
+  display: flex;
+  /* background: #c7c7c7; */
+}
+
+.up_cont2 p{
+  text-align: left;
+  font-size: var(--font_size_16);
+  padding-left: 50px;
+}
+.up_cont2> ul{
+  margin: 0 auto;
+}
+.up_cont2> ul >li{
+  display: flex;
+  width: 490px;
+  height: 100px;
+  /* background: cornflowerblue; */
+  /* padding: 10px; */
+  text-align: center;
+  margin: 40px 0px;
+}
+.up_cont2> ul >li >img{
+  width: 47px;
+  height: 47px;
+  /* padding: 20px; */
+  padding-top: 25px;
+  padding-left: 30px;
+}
+/*li태그안 이미지랑 p 태그*/
+.up_cont2 li,  .up_cont2 p{}
+
+/*p 태그 padding 값을 위해 li태그 지정*/
+.up_cont2 li:first-child p{padding-top: 35px;}
+.l_up li:nth-child(2) p{padding-top: 10px;}
+.l_up li:nth-child(3) p{padding-top: 35px;}
+.r_up li:nth-child(2) p{padding-top: 25px;}
+.r_up li:nth-child(3) p{padding-top: 25px;}
+
+/*li태그 border값*/
+.orange{
+  border: 5px solid var(--color02);
+  border-radius: 0px 20px 0px 20px;
+}
+.green{
+  border: 5px solid var(--color03);
+  border-radius: 20px 0px 20px 0px;
+}
+
+/*상세페이지 이동 more태그 서식*/
+.more{width: 1200px; margin-top: 40px;}
+.more_p01{
+  width: 100px;
+  height: 40px;
+  border: 3px solid #333;
+  border-radius: 10px 0px 10px 0px ;
+  position: relative;
+  color: #333;
+  margin: 0 auto;
+}
+.more_p01 a{
+  position: absolute;
+  top: 7px;right: 35px;
+}
+.more_p01 i{
+  position: absolute;
+  top:14px; right: 12px;
+  color: var(--color01);
+}
+.more_p01:hover{
+  background: var(--color03);
+  color: white;
+  border: 3px solid var(--color03);
+}
+.more_p01:hover  a{
+  color: white;
+}
+.more_p01:hover i{
+  color: var(--color06);
+}
+
+
+
+
+
+/*제품 서식*/
+.more_p02{
+  padding-top: 30px;
+  position: absolute;
+  top: 300px;
+}
+.more_p02 a{
+  color: var(--color02); 
+  padding: 0px;
+}
+.more_p02 i{
+  color: var(--color02);
+}
+
+.more_p02:hover{
+  color: white;
+}
+.more_p02:hover  a{
+  color: white;
+}
+.more_p02:hover i{
+  color: var(--color06);
+}
+
+
+
+/*제품 컨텐츠 시작*/
+.shop{
+  width: 100%;
+  height: 1000px;
+  background-color: var(--color03);
+}
+.shop > div{
+  width: 1200px;
+  /* height: 100%; */
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+
+/*제품 상세*/
+.l_product{
+  width: 500px;
+  height: 350px;
+  /* background: var(--color04); */
+  overflow: hidden;
+  color: var(--color06);
+  position: absolute;
+  left: 0px;
+  top: 300px;
+}
+.l_product input{display: none;}
+.l_product > div >h3{
+  padding-bottom: 20px;
+}
+.l_product div >h3{
+  font-size: var(--font_size_20);
+}
+
+/*바뀌는 부분 li 를 감싸는 ul*/
+.explain h4{
+  font-size: var(--font_size_18);
+  
+}
+.explain p{
+  font-size: var(--font_size_16);
+  padding-bottom: 40px;
+  line-height: 25px;
+  width: 500px;
+}
+
+/*주황 13px 글씨 설정*/
+.explain{
+  display: flex;
+  position: relative;
+}
+.explain ul{
+  display: flex;
+  padding-bottom: 0px;
+
+}
+.explain ul>li{
+  font-size: var(--font_size_13);
+  color: var(--color02);
+  padding-right: 10px;
+}
+
+/*pro_cont010203들의 값*/
+.ex_pro{
+  width: 500px;
+  margin-right: 100px;
+}
+
+/*제품 이미지*/
+
+.r_product{
+  width: 665px;
+  height: 990px;
+  /* background: var(--color05); */
+  position: absolute;
+  right: 0px;
+  display: flex;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-top: 5px;
+}
+.r_product::-webkit-scrollbar{
+  display: none;
+}
+.r_product img{
+  border-radius: 20px 0px 20px 0px;
+}
+.l_pro ,.r_pro{
+  padding-left: 25px;
+}
+
+.l_pro li , .r_pro li{
+  padding-bottom: 130px;
+}
+.l_pro li:last-child{
+  padding-bottom: 0px ;
+}
+.r_pro li:first-child{
+  padding-top: 200px;
+}
+
+/*제품 이미지를 클릭했을때 제품 상세 바뀌게 하기
+라디오버튼에 checked 가 있을때  lfex한 li태그를 움직이게 하기
+*/
+#b_btn01:checked ~ .explan >ul{left: 0px;}
+#b_btn02:checked ~ .explan >ul{left: -600px;}
+#b_btn03:checked ~ .explan >ul{left: -1200px;}
+#b_btn04:checked ~ .explan >ul{left: -1800px;}
+#b_btn05:checked ~ .explan >ul{left: -2400px;}
+#b_btn06:checked ~ .explan >ul{left: -3000px;}
+#b_btn07:checked ~ .explan >ul{left: -3600px;}
+#b_btn08:checked ~ .explan >ul{left: -4200px;}
+#b_btn09:checked ~ .explan >ul{left: -4800px;}
+
+
+
+/*컨텐츠 4 아프리카의 봄을 선물합니다*/
+.spring{
+  width: 100%;
+  height: 790px;
+  background-image: url(../images/cont_4_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.spring article{
+  width:  700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.spring h3{
+  font-size: var(--font_size_20);
+  color: var(--color06);
+  padding: 150px 0px 100px 0px;
+}
+
+.spring p{
+  color: var(--color06);
+}
+.spring p >a{
+  color: var(--color06);
+}
+
+.p01, .p02{
+  text-align: left;
+}
+.p01{
+  padding: 30px 0px 30px 90px;
+}
+.p02{
+  padding: 30px 0px 100px 90px;
+}
+
+/*more 서식*/
+.more_p03{
+  width: 100px;
+  height: 40px;
+  border: 3px solid var(--color06);
+  border-radius: 10px 0px 10px 0px ;
+  position: relative;
+  margin: 0 auto;
+}
+.more_p03 a{
+  position: absolute;
+  top: 7px;right: 35px;
+}
+.more_p03 i{
+  position: absolute;
+  top:14px; right: 12px;
+}
+.more_p03:hover{
+  background: var(--color06);
+  color: white;
+  border: 3px solid var(--color06);
+}
+.more_p03:hover  a{
+  color: var(--color01);
+}
+.more_p03:hover i{
+  color: var(--color01);
+}
+
+
+/*컨텐츠 5 소식*/
+.post article > h3{
+  text-align: center;
+  padding: 80px 0px 0px 0px;
+  font-size: var(--font_size_20);
+  color: var(--color06);
+}
+.post article >p{
+  font-size: var(--font_size_16);
+  text-align: center;
+  color: var(--color06);
+  padding-bottom: 80px;
+}
+.post{
+  width: 100%;
+  height: 1050px;
+  background: var(--color02);
+}
+.post > article{
+  width: 1030px;
+  margin: 0 auto;
+  /* background: var(--color04); */
+}
+/*a 태그 서식*/
+figcaption >a{
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: var(--color06);
+  font-size: var(--font_size_20);
+}
+
+/*그리드 서식*/
+
+.grid_gallery{
+  display: grid;
+  grid-gap: 20px;
+  padding: 20px 20px 20px 40px;
+  /* background: var(--color05); */
+  grid-template-columns: repeat(3,300px);
+  grid-template-rows: repeat(2,300px );
+  grid-template-areas: 
+  "g01 g02 g02"
+  "g01 g05 g06";
+}
+.grid_gallery >figure>img{
+  width: 100%;
+}
+
+.grid_gallery figure:first-child{ grid-area: g01;}
+.grid_gallery figure:nth-child(2){grid-area: g02;}
+.grid_gallery figure:nth-child(3){grid-area: g05;}
+.grid_gallery figure:last-child{grid-area: g06;}
+
+/*상세페이지로 이동하는거 서식*/
+.grid_gallery figcaption{
+  height: 300px;
+  background-color: rgba(0,0,0,.7);
+  position: relative; 
+  top: 0px;
+  transition: 0.5s;
+}
+/*1번 이미지만 따로 서식 적용*/
+.grid_gallery figure:first-child >figcaption{
+  height: 619px !important;
+  background-color: rgba(0,0,0,.7);
+  position: relative; 
+  top: 0px;
+  transition: 0.5s;
+}
+/*마우스 오버시 나오는거*/
+.grid_gallery figcaption{display: none;}
+.grid_gallery figure:hover > figcaption{
+  display: block;
+  top: -307px;
+}
+/*소식부분 오버시 나오는거 글자 위치 조정인데 왜 안될까*/
+.grid_gallery figcaption >a{
+  position: absolute;
+  left: 10px;
+  bottom: -80%;
+}
+/*1번 이미지만 따로 서식 적용*/
+.grid_gallery figure:first-child:hover >figcaption{
+  display: block;
+  top: -625px ;
+}
+.grid_gallery figure:first-child >figcaption:hover >a{
+  position: absolute;
+  left: 10px;
+  bottom: -90%;
+}
