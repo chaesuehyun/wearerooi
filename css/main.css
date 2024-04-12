@@ -228,7 +228,14 @@
 .more_p02 i{
   color: var(--color02);
 }
-.more_p02:hover a,i{
+
+.more_p02:hover{
+  color: white;
+}
+.more_p02:hover  a{
+  color: white;
+}
+.more_p02:hover i{
   color: var(--color06);
 }
 
@@ -496,11 +503,16 @@ figcaption >a{
 /*소식부분 오버시 나오는거 글자 위치 조정인데 왜 안될까*/
 .grid_gallery figcaption >a{
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  left: 10px;
+  bottom: -80%;
 }
 /*1번 이미지만 따로 서식 적용*/
 .grid_gallery figure:first-child:hover >figcaption{
   display: block;
   top: -625px ;
+}
+.grid_gallery figure:first-child >figcaption:hover >a{
+  position: absolute;
+  left: 10px;
+  bottom: -90%;
 }
