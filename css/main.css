@@ -472,6 +472,14 @@ figcaption >a{
 .grid_gallery >figure>img{
   width: 100%;
 }
+.grid_gallery >figure{
+  overflow: hidden;
+}
+/*소식부분 애니메이션*/
+.grid_gallery >figure:hover >img{
+  transform: scale(1.2);
+  transition: 0.5s;
+}
 
 .grid_gallery figure:first-child{ grid-area: g01;}
 .grid_gallery figure:nth-child(2){grid-area: g02;}
@@ -498,7 +506,7 @@ figcaption >a{
 .grid_gallery figcaption{display: none;}
 .grid_gallery figure:hover > figcaption{
   display: block;
-  top: -307px;
+  top: -306px;
 }
 /*소식부분 오버시 나오는거 글자 위치 조정인데 왜 안될까*/
 .grid_gallery figcaption >a{
@@ -509,7 +517,7 @@ figcaption >a{
 /*1번 이미지만 따로 서식 적용*/
 .grid_gallery figure:first-child:hover >figcaption{
   display: block;
-  top: -625px ;
+  top: -624px ;
 }
 .grid_gallery figure:first-child >figcaption:hover >a{
   position: absolute;

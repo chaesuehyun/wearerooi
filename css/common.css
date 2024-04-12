@@ -33,30 +33,32 @@ a{
 }
 
 /*헤더 서식*/
-.h_eader{
+header{
   width: 100%;
   height: 100px;
   background: var(--color02);
 }
-.h_eader > nav{
+.h_eader{
   width: 1200px;
+  margin: 0 auto;
+}
+.h_eader > nav{
+  width: 800px;
   height: 100px;
   margin: 0 auto;
   /* background: #FAC6AE; */
   display: flex;
-  padding: 10px 0px 0px 0px;
   position: relative;
   z-index: 4;
 } 
-.h_eader > nav >h1{
-  padding-top: 25px;
-  padding-right: 100px;
+.h_eader >h1{
+  transform: translateY(40px);
 }
 .h_eader > nav >ul{
   display: flex;
 }
 /*마우스 오버 내비게이션*/
-.gnb:hover ~ .h_bottom{
+.gnb:hover + .h_bottom{
   height: 200px;
   z-index: 3;
 }
@@ -66,13 +68,13 @@ a{
   width: 700px;
   height: 24px;
   justify-content: space-evenly;
-  padding: 25px 0px 0px 0px;
+  /* padding: 25px 0px 0px 0px; */
 }
 
 /*마우스 오버 내비게이션 서식*/
 .h_bottom{
   width: 100%;
-  height: 0px;
+  height: 50px;
   position: absolute;
   top: 100px; left: 0px;
   background: rgba(0,0,0,.5);
@@ -87,7 +89,7 @@ a{
   width: 700px; 
   margin: 0 auto;
   display: flex;
-  padding-left: 230px;
+  padding-left: 60px;
 }
 .h_bottom nav > ul{
   width: 100px;
@@ -107,7 +109,6 @@ a{
   padding-left: 10px;
 }
 
-.n_ul01 > li{}
 .n_ul01 > li >a {
   font-size: var(--font_size_16);
   color: var(--color06);
@@ -118,7 +119,7 @@ a{
 .n_ul02{
   position: absolute;
   right: 0px;
-  padding: 25px 10px 10px 10px;
+  /* padding: 25px 10px 10px 10px; */
   display: flex;
 }
 .n_ul02 i{
