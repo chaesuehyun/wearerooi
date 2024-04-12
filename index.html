@@ -572,7 +572,7 @@
       </article>
     </section>
 
-    <a href="#" id="Top">TOP</a>
+
   </main>
 
 
@@ -623,6 +623,7 @@
         </address>
     </nav>
 
+    <a href="#" id="Top">TOP</a>
     </div>
   </footer>
 
@@ -653,6 +654,25 @@
       // console.log(color);// 색상 글자 나와야함
       document.getElementById('result').style.backgroundColor=color;
     };
+
+    //top 버튼 올라가는거 스크립트
+    let scrollTop;
+    const t_btn=document.getElementById('Top');
+
+    window.addEventListener('scroll',function(){
+      scrollTop = window.scrollY;
+      // console.log(scrollTop);
+      //만약에 if 세로 스크롤값이 900px 이상일경우 scrollTop>900
+
+      if(scrollTop>=900){
+        //클래스 서식을 적용한다
+        t_btn.classList.add('act');
+        //(scrollTop<=900)을 쓸려면 else if를 써야한다
+      }else{
+        t_btn.classList.remove('act');
+      }
+      
+    });
 
 
 
