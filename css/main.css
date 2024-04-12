@@ -197,6 +197,18 @@
 .more_p01 i{
   position: absolute;
   top:14px; right: 12px;
+  color: var(--color01);
+}
+.more_p01:hover{
+  background: var(--color03);
+  color: white;
+  border: 3px solid var(--color03);
+}
+.more_p01:hover  a{
+  color: white;
+}
+.more_p01:hover i{
+  color: var(--color06);
 }
 
 
@@ -211,9 +223,13 @@
 }
 .more_p02 a{
   color: var(--color02); 
+  padding: 0px;
 }
 .more_p02 i{
   color: var(--color02);
+}
+.more_p02:hover a,i{
+  color: var(--color06);
 }
 
 
@@ -388,6 +404,17 @@
   position: absolute;
   top:14px; right: 12px;
 }
+.more_p03:hover{
+  background: var(--color06);
+  color: white;
+  border: 3px solid var(--color06);
+}
+.more_p03:hover  a{
+  color: var(--color01);
+}
+.more_p03:hover i{
+  color: var(--color01);
+}
 
 
 /*컨텐츠 5 소식*/
@@ -466,6 +493,7 @@ figcaption >a{
   display: block;
   top: -307px;
 }
+/*소식부분 오버시 나오는거 글자 위치 조정인데 왜 안될까*/
 .grid_gallery figcaption >a{
   position: absolute;
   right: 0px;
